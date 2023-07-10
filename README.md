@@ -1,14 +1,12 @@
-### [Modeling Rater Preference and Rater Calibration from Optic Disc and Cup Multi-rater Segmentation Annotations]
-------
-![image](image0.png) 
+### [Accelerating Denoising Diffusion Probabilistic Model via Truncated Inverse Processes for Medical Image Segmentation]
 ------
 ### Introduction 
 
-##### The segmentation of the optic disc (OD) and optic cup (OC) from fundus images suffers from rater variation due to differences in raters’ expertise and image blurriness. In clinical, we can fuse the annotations of multiple raters to reduce rater-related biases through methods such as majority voting. However, these methods ignores the unique preferences of each rater. In this paper, we propose a novel neural network framework to jointly learn rater calibration and preference for multiple annotations of OD and OC segmentation, which consists of two main parts. In the first part, we model multi-annotation as a multi-class segmentation problem to learn calibration segmentation. Further, we propose a multi-annotation smoothing network (MSNet), which can effectively remove high-frequency components in calibration predictions. In the second part, we represent different raters with specific codes, which are used as parameters of the model and optimized during training. In this way, we can achieve modeling different rater preferences under a single network, and the learned rater codes can represent differences in preference patterns among different raters.
+##### Due to the impressive advancements achieved by Denoising Diffusion Probability Models (DDPMs) in image generation, researchers have explored the possibility of utilizing DDPMs in discriminative tasks to achieve superior performance. However, the inference process of DDPMs is highly inefficient since it requires thousands of iterative denoising steps. In this study, we propose an accelerated denoising diffusion probabilistic model via truncated inverse processes (ADDPM) that is specifically designed for medical image segmentation. The inverse process of ADDPM starts from a non-Gaussian distribution and terminates early once a prediction with relatively low noise is obtained after multiple iterations of denoising. We employ a separate powerful segmentation network to obtain pre-segmentation and construct the non-Gaussian distribution of the segmentation based on the forward diffusion rule. By further adopting a separate denoising network, the final segmentation can be obtained with just one denoising step from the predictions with low noise. ADDPM greatly reduces the number of denoising steps to approximately one-tenth of that in vanilla DDPMs. Our experiments on three segmentation tasks demonstrate that ADDPM outperforms both vanilla DDPMs and existing representative accelerating DDPMs methods. Moreover, ADDPM can be easily integrated with existing advanced segmentation models to improve segmentation performance and provide uncertainty estimation.
 ------
 ### Framework
 ------
-![image](image1.png) 
+![image](https://github.com/Guoxt/ADDPM/assets/46101051/f8479690-0771-49c5-b26b-d5efd27a6ccd)
 ------
 ### > Requirment
 + pytorch 1.0.0+
