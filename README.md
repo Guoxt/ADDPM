@@ -24,5 +24,5 @@ MODEL_FLAGS="--image_size 256 --num_channels 128 --class_cond False --num_res_bl
 python sample.py --data_dir .../test --model_path .../savedmode.pt --file_list 0 --pre_t 300 --en_num 0 
 ```
 ### Other
-The implementation of Denoising Diffusion Probabilistic Models presented in the paper is based on openai/improved-diffusion and https://github.com/JuliaWolleb/Diffusion-based-Segmentation
+The implementation of Denoising Diffusion Probabilistic Models presented in the paper is based on openai/improved-diffusion and JuliaWolleb/Diffusion-based-Segmentation
 
