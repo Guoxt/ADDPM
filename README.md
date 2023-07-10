@@ -8,14 +8,6 @@
 ------
 ![image](https://github.com/Guoxt/ADDPM/assets/46101051/f8479690-0771-49c5-b26b-d5efd27a6ccd)
 ------
-### > Requirment
-+ pytorch 1.0.0+
-+ torchvision
-+ PIL
-+ numpy
-+ tensorboard==1.7.0
-+ tensorboardX==2.0
-
 ```
 ### Run 
 
@@ -30,7 +22,7 @@ MODEL_FLAGS="--image_size 256 --num_channels 128 --class_cond False --num_res_bl
 2. test
 
 python sample.py --data_dir .../test --model_path .../savedmode.pt --file_list 0 --pre_t 300 --en_num 0 
-
+```
 ### Other
 The implementation of Denoising Diffusion Probabilistic Models presented in the paper is based on openai/improved-diffusion and https://github.com/JuliaWolleb/Diffusion-based-Segmentation
 
