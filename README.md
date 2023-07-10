@@ -20,6 +20,7 @@
 ### Run 
 
 1. train
+
 python train_preseg_network.py --batch_size 12 --lr 0.001
 
 python train_denoising_network.py --batch_size 12 --lr 0.001 --T 250
@@ -28,12 +29,8 @@ MODEL_FLAGS="--image_size 256 --num_channels 128 --class_cond False --num_res_bl
 
 2. test
 
-```python test_DCNet.py```                        # set '--phase' as test
+python sample.py --data_dir .../test --model_path .../savedmode.pt --file_list 0 --pre_t 300 --en_num 0 
 
-
-### Dataset
-1. RIGA benchmark: you can access to this download [link](https://pan.baidu.com/s/1CJzY6WYJfyLwDEKGo_D2IQ), with fetch code (**1627**) or [Google Drive](https://drive.google.com/drive/folders/1Oe9qcuV0gJQSe7BKw1RX_O1dGwenIx9i?usp=sharing). 
-```
-### Contact Us
-If you have any questions, please contact us ( 9469044@qq.com ).
+### Other
+The implementation of Denoising Diffusion Probabilistic Models presented in the paper is based on openai/improved-diffusion and https://github.com/JuliaWolleb/Diffusion-based-Segmentation
 
