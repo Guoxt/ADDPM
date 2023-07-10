@@ -1,5 +1,5 @@
 ### Accelerating Denoising Diffusion Probabilistic Model via Truncated Inverse Processes for Medical Image Segmentation
-We provide the official Pytorch implementation of the paper Accelerating Denoising Diffusion Probabilistic Model via Truncated Inverse Processes for Medical Image Segmentation
+##### We provide the official Pytorch implementation of the paper Accelerating Denoising Diffusion Probabilistic Model via Truncated Inverse Processes for Medical Image Segmentation
 ------
 ### Introduction 
 
